@@ -1,0 +1,357 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navber {
+    width: 100%;
+    background-color: rgb(6, 0, 57);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 150px;
+    margin: 10px;
+    color: orange;
+}
+
+.logoname {
+    margin: 5px;
+}
+
+.pages {
+    width: 40%;
+    margin-right: 10px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pages ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.pages a:hover {
+    color: orange;
+}
+
+.firstpart {
+    /* padding-top: 50px; */
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fastfood.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.back {
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+
+.firstpart .text {
+    margin: 40px;
+    z-index: 1;
+}
+
+h1 {
+    width: 80%;
+    font-size: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.firstpart .text p {
+    width: 80%;
+    font-size: 20px;
+}
+
+.firstpart .img {
+    margin-right: 40px;
+    z-index: 1;
+    animation-name: sniper;
+    animation-duration: 18s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.firstpart img {
+    width: 450px;
+    height: 450px;
+}
+
+@keyframes sniper {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.firstpart input {
+    margin-top: 10px;
+    width: 250px;
+    height: 70px;
+    background-color: orange;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    z-index: 1;
+}
+
+.secondpart {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(4, 0, 19);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    width: 20%;
+    height: 64%;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    /* animation-name: anim; */
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes anim {
+    100% {
+        background-color: orange;
+    }
+}
+
+.card img {
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+}
+
+.card h3 {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.card p {
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.card:hover {
+    animation-name: anim;
+    animation-play-state: running;
+}
+
+.thirdpart {
+    width: 100%;
+    height: 230px;
+    background-color: rgb(4, 0, 19);
+    color: rgba(255, 255, 255, 0.852);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thirdpart h4 {
+    color: orange;
+    font-size: 20px;
+    font-family: cursive;
+    letter-spacing: -5px;
+}
+
+.thirdpart h4 span {
+    letter-spacing: 0px;
+}
+
+.thirdpart h3 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tybe {
+    background-color: orange;
+    border-radius: 5px;
+    display: flex;
+    color: black;
+    width: 40%;
+    justify-content: space-around;
+}
+
+.item {
+    margin: 11px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.item img {
+    margin: 5px;
+}
+
+.item h5 {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.foods {
+    width: 100%;
+    height: 650px;
+    background-color: rgb(4, 0, 19);
+    color: rgba(255, 255, 255, 0.852);
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.foods img {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+}
+
+.food {
+    display: flex;
+    align-items: center;
+}
+
+.food .text {
+    width: 80%;
+}
+.food .name p{
+    color: orange;
+}
+
+.food .name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.food hr {
+    margin: 5px;
+}
+
+.book {
+    width: 100%;
+    height: 550px;
+    background-color: rgb(4, 0, 19);
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+
+}
+
+.bookinput {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: aliceblue;
+}
+
+input {
+    width: 500px;
+    height: 50px;
+    background-color: rgb(69, 69, 69);
+}
+
+.bookinput input::after {
+    content: "input";
+    color: aliceblue;
+}
+
+textarea {
+    width: 500px;
+    background-color: rgb(69, 69, 69);
+}
+
+.bookinput div:nth-child(1) {
+    font-size: 20px;
+    color: orange;
+    font-family: cursive;
+}
+
+.bookinput div:nth-child(2) {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bookinput .button {
+    background-color: orange;
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bookinput input::placeholder,
+textarea::placeholder {
+    font-size: 20px;
+    color: darkgrey;
+    padding-left: 15px;
+    padding-top: 10px;
+    font-family: sans-serif;
+}
+
+.footer {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(6, 0, 57);
+    color: cyan;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer h4 {
+    color: orange;
+    font-size: 30px;
+    font-family: cursive;
+    margin-bottom: 20px;
+}
+
+.footer .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer li {
+    padding: 8px;
+}
