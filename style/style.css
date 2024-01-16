@@ -385,6 +385,7 @@ textarea::placeholder {
         align-items: center;
     }
     .firstpart .text{
+        margin-top: 90px;
         text-align: center;
         align-items: center;
     }
